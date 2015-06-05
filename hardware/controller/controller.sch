@@ -28,8 +28,40 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:ADCchain
+LIBS:BP5037
+LIBS:DS1882
+LIBS:dual_mos_p
+LIBS:hirose
+LIBS:lm1117
+LIBS:LT1054
+LIBS:lumex
+LIBS:MAX4582
+LIBS:MCP23017
+LIBS:MCP42010
+LIBS:myconn3
+LIBS:PJ-102A
+LIBS:xmossupport
 LIBS:relays
 LIBS:interface
+LIBS:ok-74logic
+LIBS:ok-con-generic
+LIBS:ok-diodes
+LIBS:ok-generic
+LIBS:ok-ic-analog
+LIBS:ok-ic-atmel
+LIBS:ok-ic-com
+LIBS:ok-ic-memory
+LIBS:ok-ic-power
+LIBS:ok-ic-special
+LIBS:ok-ic-stm32
+LIBS:ok-jacks
+LIBS:ok-opto
+LIBS:ok-power
+LIBS:ok-relay
+LIBS:ok-switches
+LIBS:ok-transformers
+LIBS:ok-transistors
 LIBS:ds1307timer-cache
 LIBS:borniers
 LIBS:switch-enc
@@ -41,7 +73,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Hovedkort"
-Date "4 jun 2015"
+Date "5 jun 2015"
 Rev "1"
 Comp "Haustveit elektro"
 Comment1 ""
@@ -470,12 +502,12 @@ $EndComp
 $Comp
 L BATTERY BT1
 U 1 1 556DD9B7
-P 5500 3350
-F 0 "BT1" H 5600 3400 50  0000 L CNN
-F 1 "BATTERY" H 5600 3300 50  0000 L CNN
-F 2 "" V 5500 3390 60  0000 C CNN
-F 3 "" V 5500 3390 60  0000 C CNN
-	1    5500 3350
+P 5700 3350
+F 0 "BT1" H 5800 3400 50  0000 L CNN
+F 1 "BATTERY" H 5800 3300 50  0000 L CNN
+F 2 "" V 5700 3390 60  0000 C CNN
+F 3 "" V 5700 3390 60  0000 C CNN
+	1    5700 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -727,11 +759,11 @@ Wire Wire Line
 Wire Wire Line
 	2700 4400 3100 4400
 Wire Wire Line
-	5500 3200 5350 3200
+	5700 3200 5350 3200
 Wire Wire Line
-	5500 3500 5500 5050
+	5700 3500 5700 5050
 Wire Wire Line
-	5500 5050 4250 5050
+	5700 5050 4250 5050
 Wire Wire Line
 	14350 4150 9500 4150
 Wire Wire Line

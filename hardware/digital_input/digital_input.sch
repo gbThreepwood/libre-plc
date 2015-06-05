@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:borniers
 LIBS:digital_input-cache
 EELAYER 27 0
 EELAYER END
@@ -36,7 +37,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Digitalt inngangskort"
-Date "3 jun 2015"
+Date "5 jun 2015"
 Rev "1"
 Comp "Haustveit elektro"
 Comment1 ""
@@ -803,39 +804,6 @@ F 3 "~" H 3600 5400 60  0000 C CNN
 	1    3600 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_3_V K1
-U 1 1 556E105C
-P 900 1500
-F 0 "K1" H 800 1750 50  0000 C CNN
-F 1 "CONN_3_V" H 900 1690 40  0000 C CNN
-F 2 "" H 900 1500 60  0000 C CNN
-F 3 "" H 900 1500 60  0000 C CNN
-	1    900  1500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_3_V K2
-U 1 1 556E1069
-P 900 2000
-F 0 "K2" H 800 2250 50  0000 C CNN
-F 1 "CONN_3_V" H 900 2190 40  0000 C CNN
-F 2 "" H 900 2000 60  0000 C CNN
-F 3 "" H 900 2000 60  0000 C CNN
-	1    900  2000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_3_V K3
-U 1 1 556E106F
-P 900 2500
-F 0 "K3" H 800 2750 50  0000 C CNN
-F 1 "CONN_3_V" H 900 2690 40  0000 C CNN
-F 2 "" H 900 2500 60  0000 C CNN
-F 3 "" H 900 2500 60  0000 C CNN
-	1    900  2500
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 1400 4600 1400
 Wire Wire Line
@@ -869,7 +837,7 @@ Wire Wire Line
 	4600 2350 4600 2150
 Connection ~ 3950 2350
 Wire Wire Line
-	2300 1950 2700 1950
+	1250 1950 2700 1950
 Wire Wire Line
 	3250 2350 4600 2350
 Wire Wire Line
@@ -889,7 +857,7 @@ Wire Wire Line
 	4600 2900 4600 2700
 Connection ~ 3950 2900
 Wire Wire Line
-	2200 2500 2700 2500
+	1250 2500 2700 2500
 Wire Wire Line
 	3250 2900 4600 2900
 Wire Wire Line
@@ -909,7 +877,7 @@ Wire Wire Line
 	4600 3450 4600 3250
 Connection ~ 3950 3450
 Wire Wire Line
-	2100 3050 2700 3050
+	1250 3050 2700 3050
 Wire Wire Line
 	3250 3450 4600 3450
 Wire Wire Line
@@ -925,8 +893,6 @@ Wire Wire Line
 	4600 4000 4600 3800
 Connection ~ 3950 4000
 Wire Wire Line
-	2000 3600 2700 3600
-Wire Wire Line
 	3250 4000 4600 4000
 Wire Wire Line
 	5300 3800 5350 3800
@@ -940,8 +906,6 @@ Connection ~ 3950 4150
 Wire Wire Line
 	4600 4550 4600 4350
 Connection ~ 3950 4550
-Wire Wire Line
-	1900 4150 2700 4150
 Wire Wire Line
 	3250 4550 4600 4550
 Wire Wire Line
@@ -969,8 +933,6 @@ Wire Wire Line
 	4600 5050 4600 4850
 Connection ~ 3950 5050
 Wire Wire Line
-	1800 4650 2700 4650
-Wire Wire Line
 	3250 5050 4600 5050
 Wire Wire Line
 	5300 4850 5350 4850
@@ -984,10 +946,6 @@ Connection ~ 3950 5200
 Wire Wire Line
 	4600 5600 4600 5400
 Connection ~ 3950 5600
-Wire Wire Line
-	1700 5200 2700 5200
-Wire Wire Line
-	1600 5600 4600 5600
 Wire Wire Line
 	5300 5400 5350 5400
 Wire Wire Line
@@ -1169,49 +1127,8 @@ Wire Wire Line
 Wire Wire Line
 	14550 9550 14550 9700
 Connection ~ 14550 10150
-Wire Wire Line
-	3250 1800 3250 5600
-Connection ~ 3250 2350
-Connection ~ 3250 2900
-Connection ~ 3250 3450
-Connection ~ 3250 4000
-Connection ~ 3250 4550
-Connection ~ 3250 5050
-Connection ~ 3250 5600
 Connection ~ 3600 1400
 Connection ~ 3600 1800
-Wire Wire Line
-	2300 1950 2300 1500
-Wire Wire Line
-	2300 1500 1250 1500
-Wire Wire Line
-	1250 1600 2200 1600
-Wire Wire Line
-	2200 1600 2200 2500
-Wire Wire Line
-	1250 1900 2100 1900
-Wire Wire Line
-	2100 1900 2100 3050
-Wire Wire Line
-	1250 2000 2000 2000
-Wire Wire Line
-	2000 2000 2000 3600
-Wire Wire Line
-	1250 2100 1900 2100
-Wire Wire Line
-	1900 2100 1900 4150
-Wire Wire Line
-	1250 2400 1800 2400
-Wire Wire Line
-	1800 2400 1800 4650
-Wire Wire Line
-	1250 2500 1700 2500
-Wire Wire Line
-	1700 2500 1700 5200
-Wire Wire Line
-	1600 5600 1600 2600
-Wire Wire Line
-	1600 2600 1250 2600
 $Comp
 L PC817 IC9
 U 1 1 556E2006
@@ -2142,8 +2059,139 @@ Wire Wire Line
 	13500 9000 13500 9450
 Wire Wire Line
 	13500 9650 13500 10150
-Text Notes 13400 8950 0    60   ~ 0
-24V supply to external sensors and switches.
+Text Notes 11450 8850 0    100  ~ 0
+Isolated 24VDC supply to external digital input sources
 Text Notes 10500 1700 0    60   ~ 0
 Address selection jumpers.
+$Comp
+L CONN_2_V P?
+U 1 1 5571AEF3
+P 900 1500
+F 0 "P?" H 820 1725 40  0000 C CNN
+F 1 "CONN_2_V" H 870 1680 40  0000 C CNN
+F 2 "" H 900 1500 60  0000 C CNN
+F 3 "" H 900 1500 60  0000 C CNN
+	1    900  1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1600 3250 1600
+Wire Wire Line
+	1250 5200 2700 5200
+Wire Wire Line
+	1250 4650 2700 4650
+Wire Wire Line
+	1250 4150 2700 4150
+Wire Wire Line
+	1250 3600 2700 3600
+$Comp
+L CONN_2_V P?
+U 1 1 5571B056
+P 900 2050
+F 0 "P?" H 820 2275 40  0000 C CNN
+F 1 "CONN_2_V" H 870 2230 40  0000 C CNN
+F 2 "" H 900 2050 60  0000 C CNN
+F 3 "" H 900 2050 60  0000 C CNN
+	1    900  2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2_V P?
+U 1 1 5571B05C
+P 900 2600
+F 0 "P?" H 820 2825 40  0000 C CNN
+F 1 "CONN_2_V" H 870 2780 40  0000 C CNN
+F 2 "" H 900 2600 60  0000 C CNN
+F 3 "" H 900 2600 60  0000 C CNN
+	1    900  2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2_V P?
+U 1 1 5571B062
+P 900 3150
+F 0 "P?" H 820 3375 40  0000 C CNN
+F 1 "CONN_2_V" H 870 3330 40  0000 C CNN
+F 2 "" H 900 3150 60  0000 C CNN
+F 3 "" H 900 3150 60  0000 C CNN
+	1    900  3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2_V P?
+U 1 1 5571B1C0
+P 900 3700
+F 0 "P?" H 820 3925 40  0000 C CNN
+F 1 "CONN_2_V" H 870 3880 40  0000 C CNN
+F 2 "" H 900 3700 60  0000 C CNN
+F 3 "" H 900 3700 60  0000 C CNN
+	1    900  3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2_V P?
+U 1 1 5571B1C6
+P 900 4250
+F 0 "P?" H 820 4475 40  0000 C CNN
+F 1 "CONN_2_V" H 870 4430 40  0000 C CNN
+F 2 "" H 900 4250 60  0000 C CNN
+F 3 "" H 900 4250 60  0000 C CNN
+	1    900  4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2_V P?
+U 1 1 5571B1CC
+P 900 4750
+F 0 "P?" H 820 4975 40  0000 C CNN
+F 1 "CONN_2_V" H 870 4930 40  0000 C CNN
+F 2 "" H 900 4750 60  0000 C CNN
+F 3 "" H 900 4750 60  0000 C CNN
+	1    900  4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2_V P?
+U 1 1 5571B1D2
+P 900 5300
+F 0 "P?" H 820 5525 40  0000 C CNN
+F 1 "CONN_2_V" H 870 5480 40  0000 C CNN
+F 2 "" H 900 5300 60  0000 C CNN
+F 3 "" H 900 5300 60  0000 C CNN
+	1    900  5300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1600 3250 1800
+Wire Wire Line
+	1250 2150 3250 2150
+Wire Wire Line
+	3250 2150 3250 2350
+Wire Wire Line
+	1250 2700 3250 2700
+Wire Wire Line
+	3250 2700 3250 2900
+Wire Wire Line
+	1250 3250 3250 3250
+Wire Wire Line
+	3250 3250 3250 3450
+Wire Wire Line
+	1250 3800 3250 3800
+Wire Wire Line
+	3250 3800 3250 4000
+Wire Wire Line
+	1250 4350 3250 4350
+Wire Wire Line
+	3250 4350 3250 4550
+Wire Wire Line
+	1250 4850 3250 4850
+Wire Wire Line
+	3250 4850 3250 5050
+Wire Wire Line
+	1250 5400 3250 5400
+Wire Wire Line
+	3250 5400 3250 5600
+Wire Wire Line
+	3250 5600 4600 5600
+Connection ~ 3600 5600
 $EndSCHEMATC
