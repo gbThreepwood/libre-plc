@@ -1,8 +1,8 @@
-update=fr. 05. juni 2015 kl. 14.46 +0200
+update=fr. 05. juni 2015 kl. 19.22 +0200
 last_client=eeschema
 [eeschema]
 version=1
-LibDir=../../../../lib/kicad-library/library;../../../../lib/kicad-library-foo;../../../../lib/various;../../../../lib/KiCAD-Libs/libraries
+LibDir=../../../../lib/kicad-library/library;../../../../lib/kicad-library-foo;../../../../lib/various;../../../../lib/KiCAD-Libs/libraries;../../../../lib/mcous/kicad-lib/components;../../../../lib/xbee/module_droids
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -72,9 +72,5 @@ LibName60=ok-relay
 LibName61=ok-switches
 LibName62=ok-transformers
 LibName63=ok-transistors
-LibName64=/media/home/eirik/Dokument/AVR_IO/lib/various/ds1307/ds1307timer-cache
-LibName65=/media/home/eirik/Dokument/AVR_IO/lib/various/borniers
-LibName66=/media/home/eirik/Dokument/AVR_IO/lib/various/switch-enc
-LibName67=maxim-ic
-LibName68=/media/home/eirik/Dokument/AVR_IO/lib/xbee/module_droids/modules_droids
-LibName69=/media/home/eirik/Dokument/AVR_IO/lib/KiCAD-Libs/libraries/ok-74logic
+LibName64=maxim-ic
+LibName65=modules_droids
